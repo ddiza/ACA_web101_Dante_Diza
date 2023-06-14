@@ -7,17 +7,18 @@ body  {
   
 header  {
     margin: auto;
-    grid-template-columns: 10% 10%;
+    flex-wrap: wrap;
     height: 115px;
     background-color: maroon ;  
 }
   
 .head-nav  {
-  display: grid;
-  grid-template-columns:10 px;
+  display:flex;
   margin:auto;
+  width: auto;
   height: auto;
   align-items: center;
+  padding-top: 30px;
   font-family: 'Sans', serif;
 }
 
@@ -149,11 +150,11 @@ button  {
 .icons-contact a {
   text-decoration: none;
   color: black;
-}
- 
+} 
 
 
 footer  {
+  flex-wrap: flex;
   background-color: maroon ;
   margin: auto;
 }
@@ -163,43 +164,22 @@ footer  {
   grid-template-columns: repeat(2,1fr);
   margin: auto;
   justify-content: center;
-  padding-bottom: 20px;
-}
-
-
-.foot-nav  {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  text-align: center;
-  font-family: 'Merriweather', serif;
-  font-size: 16px;
-}
-
-.foot-nav a  {
-  border: 1pt black solid;
-  border-radius: 10%;
-  background-color:  maroon;
-  padding: 2pt;
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
+  padding-bottom: 20px; 
 }
  
   
 h3  {
-  display: flex;
+  display: flex;  
   justify-content: center;
   font-family: 'Merriweather', serif;
-  font-size: 30px;
-  font-weight: 100;
+  font-size: 22px;
+  font-weight:200;
   font-style:italic;
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 
 
-.follow-me  {
+.follow-us  {
   color: black;
   margin-top: 0;
 }
@@ -209,7 +189,7 @@ h3  {
   justify-content: space-evenly;
 }
 
-.follow-me  {
+.follow-us a {
   text-decoration: none;
   color: black;
 }
@@ -220,15 +200,14 @@ h3  {
 header  {
   margin: auto;
   height: auto;
-  background-color: goldenrod ;
+  background-color: rgb(183, 132, 3) ;
 }
     
 .head-nav  {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 50%;
+  flex-wrap: wrap;
   margin: auto;    
   height: auto;
+  padding-top: 10px;
   align-items: center;
   font-family: 'Merriweather', serif;
 }
@@ -263,4 +242,5 @@ textarea  {
   width: 150pt;
 }
 
+.foot
 }
