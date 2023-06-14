@@ -2,7 +2,7 @@ body  {
     margin: auto;
     width: auto;
     height: auto;
-    background-color: beige;  
+    background-color: beige;    
 }
   
 header  {
@@ -14,29 +14,17 @@ header  {
   
 .head-nav  {
   display:flex;
-  margin:auto;
-  width: auto;
-  height: auto;
-  align-items: center;
+  grid-template-columns: 40% 20% 40%;
+  margin:auto;  
+  height: auto;  
   padding-top: 30px;
   font-family: 'Sans', serif;
-}
-
-.image-box  {
-  height: 80px;
-}
-
-.aca-logo  {
-  height: 140px;
-  background-color: whitesmoke;
-  border-radius: 50%;
-  padding-top: 5px;
 }
 
 .navigation a  {
   border: 1pt black solid;
   border-radius: 15%;
-  background-color:  darkkhaki;
+  background-color:  darkkhaki;  
   padding: 4pt;
   text-decoration: none;
   color: black;
@@ -47,18 +35,18 @@ section  {
   text-align: center;
   margin: auto;
 }
-  
+
 nav>section  {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   margin: auto;
 }
-  
+ 
   
  h1  {
   font-size: 110px;
-  border-bottom: lightgray solid 3pt;
+  border-bottom: black solid 3pt;
   margin: auto 100pt;
   color: maroon;
   font-family: 'Oswald', sans-serif;
@@ -70,16 +58,14 @@ h2  {
   padding-bottom: 40px;
   font-family: 'Merriweather', serif;
   font-style:italic;
-  font-weight: bold;
-}
-  
+
+}  
   
 main  {
   margin: auto;
   width: 800px;
   display: flex;
   flex-direction: column;
-  text-align: center;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -138,44 +124,45 @@ form  {
 button  {
   font-size: 24px;
 }
-  
-.icons-contact  {    
-  margin:20pt auto auto auto;
-  width: 200pt;
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 40px;
-}
-  
-.icons-contact a {
-  text-decoration: none;
-  color: black;
-} 
-
 
 footer  {
-  flex-wrap: flex;
   background-color: maroon ;
   margin: auto;
 }
 
-.foot-container {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  margin: auto;
+ul {
+  height: 110px;
+  display: flex;
   justify-content: center;
-  padding-bottom: 20px; 
+  align-items: center;
+  font-size: 75px;
+  list-style: none;
+  padding: 0;
+  margin: 0;  
 }
- 
-  
+
+li {
+  display: block;
+  margin-right: 1em;  
+}
+
+li:last-child {
+  margin-right: 0;  
+}
+
+svg {
+  display: block;
+  fill: #aaa;
+}
+
 h3  {
   display: flex;  
   justify-content: center;
   font-family: 'Merriweather', serif;
-  font-size: 22px;
-  font-weight:200;
-  font-style:italic;
-  margin-bottom: 50px;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 100;
+  margin-bottom: 0;
 }
 
 
@@ -189,11 +176,10 @@ h3  {
   justify-content: space-evenly;
 }
 
-.follow-us a {
+.follow-us a  {
   text-decoration: none;
   color: black;
 }
-  
   
 @media (max-width: 840px)  {
    
@@ -240,7 +226,4 @@ form  {
     
 textarea  {
   width: 150pt;
-}
-
-.foot
 }
