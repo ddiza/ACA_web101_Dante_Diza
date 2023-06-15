@@ -1,7 +1,7 @@
 body  {
-    margin: auto;
-    width: auto;
-    height: auto;
+    margin: 0;
+    width: 100%;    
+    height: auto;    
     background-color: beige;    
 }
   
@@ -66,8 +66,8 @@ main  {
   width: 800px;
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
   
 label  {
@@ -126,8 +126,8 @@ button  {
 }
 
 footer  {
-  background-color: maroon ;
-  margin: auto;
+  background-color: maroon;
+  padding-bottom: 70px;
 }
 
 ul {
@@ -156,12 +156,13 @@ svg {
 }
 
 h3  {
-  display: flex;  
+  display:grid;  
   justify-content: center;
-  font-family: 'Merriweather', serif;
+  color: white;
+  font-family: 'Oswald';
   font-size: 30px;
-  font-style: italic;
-  font-weight: 100;
+  font-style:normal;
+  font-weight: 200;
   margin-bottom: 0;
 }
 
@@ -172,15 +173,11 @@ h3  {
 }
 
 .icons  {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  justify-content:center;  
 }
 
-.follow-us a  {
-  text-decoration: none;
-  color: black;
-}
-  
+
 @media (max-width: 840px)  {
    
 header  {
@@ -204,9 +201,9 @@ header  {
     
 main  {
   width: auto;
-  margin: auto;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  margin-bottom:10px;
+  padding-top: 10px;
+  padding-bottom: 80px;
 }
     
 section.title  {
